@@ -1,50 +1,67 @@
+html, body {
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font-family: "Share Tech Mono", Monospace;
+  font-weight: bold;
+  color: white;
+  background-color: black;
 }
 
-ol, ul {
-  padding-left: 30px;
+#root{
+  text-align: center; 
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+.game-board {
+  padding-top: 10vh;
+  padding-bottom: 3vh;
 }
 
-.status {
-  margin-bottom: 10px;
+.game-info {
+  padding-bottom: 5vh;
+  font-size: larger;
+}
+
+.game-moves{
+  display: inline-block;
+  text-align: left;
 }
 
 .square {
   background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
+  border: 1px solid #000;
+  font-size: 5vh;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  line-height: 5vh;
+  height: 5vh;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 5vh;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.square:focus {
-  outline: none;
+li {
+  padding-bottom: 1vh;
+  font-size: 2vh;
+  max-height: 4vh;
 }
 
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
+li > button {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1vh solid transparent;
+  border-radius: 1vh;
+  font-size: 2vh;
+  max-height: 4vh;
+  font-weight: bold;
+  
 }
